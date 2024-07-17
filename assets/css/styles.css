@@ -23,8 +23,9 @@ body {
 
 /* header default styles */
 header {
-    max-width: 66.25rem;
+    max-width: 68.25rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .navbar-icon {
@@ -67,4 +68,17 @@ header {
     border: none;
     border-radius: 50px;
     font-weight: 600;
+}
+
+/* navbar mobile screen styles */
+@media screen and (max-width: 576px) {
+    .navbar-icon {
+        display: block;
+        color: var(--base-content);
+        font-size: 1.25rem;
+    }
+    
+    .navbar-pages {
+        display: none;
+    }
 }
