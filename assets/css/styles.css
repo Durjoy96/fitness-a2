@@ -1,5 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-100: #222222;
+    --base-200: #000000;
+    --base-content: #ffffff;
+    --base-content-secondary: #ffffff80;
+    --primary: #e6533c;
+    --primary-content: #ffffff;
+}
+
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--base-200);
+    min-height: 100svh;
+}
+
+/* header default styles */
+header {
+    max-width: 66.25rem;
+    margin: 0 auto;
+}
+
+.navbar-icon {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0 0;
+}
+
+.brand-name {
+    color: var(--primary);
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.navbar-pages {
+    display: flex;
+    align-items: center;
+    gap: 2.93rem;
+    list-style: none;
+    border: 1px solid var(--base-100);
+    border-radius: 50px;
+    padding: 4px 20px 4px 4px;
+}
+
+.navbar-page-link {
+    text-decoration: none;
+    color: var(--base-content);
+}
+
+.navbar-page-link.home {
+    display: inline-block;
+    background-color: var(--primary );
+    padding: .5rem 1.25rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
 }
