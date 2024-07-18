@@ -62,9 +62,10 @@ body {
 
 /* header default styles */
 header {
+    width: 100%;
+    height: auto;
     padding: 0 2rem;
     background: linear-gradient(to bottom, #111111, rgba(119, 119, 119, 0.2));
-    height: 715px;
     box-shadow: inset 0 -50px 100px #000000;
 }
 
@@ -225,7 +226,7 @@ header {
     border-radius: 50%;
 }
 
-.fa-play {
+.tutorial-circle span{
     display: none;
 }
 
@@ -303,7 +304,7 @@ header {
         place-items: center;
     }
 
-    .fa-play {
+    .tutorial-circle span {
         display: block;
         color: var(--primary-content);
     }
