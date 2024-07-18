@@ -28,11 +28,43 @@ body {
     min-height: 100svh;
 }
 
+/* shared styles */
+.description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--base-content-secondary);
+    letter-spacing: .5px;
+    line-height: 1.625;
+}
+
+.primary-btn,
+.secondary-btn {
+    width: 224px;
+    height: 54px;
+    border-radius: 50px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: 2px solid var(--primary);
+    color: var(--primary-content);
+    background-color: var(--primary);
+}
+
+.secondary-btn {
+    border: 2px solid var(--base-content);
+    background-color: var(--base-200);
+    color: var(--base-content);
+}
+
 /* header default styles */
 header {
-    max-width: 68.25rem;
-    margin: 0 auto;
     padding: 0 2rem;
+    background: linear-gradient(to bottom, #111111, rgba(119, 119, 119, 0.2));
+    height: 715px;    
+    box-shadow: inset 0 -50px 100px #000000;
 }
 
 .navbar-icon {
@@ -43,7 +75,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem 0 0;
+    max-width: 68.25rem;
+    margin: 0 auto;
+    padding: 3rem 0 0;
 }
 
 .brand-name {
@@ -79,6 +113,10 @@ header {
 
 /* navbar mobile screen styles */
 @media screen and (max-width: 576px) {
+    header {
+        padding: 0 1rem;
+    }
+
     .navbar-icon {
         display: block;
         color: var(--base-content);
@@ -88,4 +126,106 @@ header {
     .navbar-pages {
         display: none;
     }
+}
+
+/* banner default styles */
+.banner {
+    max-width: 68.25rem;
+    margin: 96px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* banner content default styles */
+.banner-content {
+    max-width: 520px;
+}
+
+.tagline {
+    color: var(--base-content);
+    font-size: 4.875rem;
+    font-weight: 900;
+    line-height: .9;
+    ;
+}
+
+.shape-text {
+    font-family: miama;
+    font-weight: 400;
+    font-size: 10rem;
+}
+
+.banner-content .description {
+    margin: 28px 0;
+}
+
+.banner-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* banner image container default styles */
+.banner-img-container {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img-card {
+    padding: 1rem 1.5rem;
+    background-color:  rgba(48, 48, 48, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: .75rem;
+    position: absolute;
+}
+
+.videos-card {
+    top: 7rem;
+    right: -4rem;
+}
+
+.videos-card h5 {
+    font-size: 3.12rem;
+    font-weight: 900;
+    color: var(--base-content);
+}
+
+.videos-card p,
+.tutorial-card p {
+    font-size: .8125rem;
+    font-weight: 400;
+    color: var(--base-content-secondary);
+}
+
+.tutorial-card p {
+    margin: 5px 0 0;
+}
+
+.tutorial-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    bottom: 4.5rem;
+    left: -5rem;
+}
+
+.tutorial-circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50%;
+}
+
+.tutorial-card h5 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--base-content);
 }
