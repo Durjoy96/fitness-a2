@@ -309,3 +309,30 @@ header {
         color: var(--primary-content);
     }
 }
+
+/* banner tablet screen styles */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+        margin: 79px auto 0;
+    }
+
+    .banner-content {
+        max-width: 599px;
+    }
+
+    .banner-img-container {
+        margin: 100px 0 0;
+    }
+
+    .videos-card {
+        top: 3rem;
+        right: -2rem;
+    }
+
+    .tutorial-card {
+        bottom: 9.5rem;
+        left: -2rem;
+    }
+
+}
