@@ -363,7 +363,7 @@ header {
 .habits-card-container {
     display: flex;
     gap: 40px;
-    margin: 54px 0 0; 
+    margin: 54px 0 0;
 }
 
 .habit-card {
@@ -406,7 +406,7 @@ header {
     }
 
     .title {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .habits-content .description {
@@ -425,5 +425,66 @@ header {
 
     .habit-card img {
         width: 90%;
+    }
+}
+
+/* run an extra miles default styles */
+.join-now-banner {
+    max-width: 68.25rem;
+    margin: 100px auto 100px;
+    padding: 0 2rem;
+}
+
+.join-now-banner-parent {
+    background-color: var(--base-100);
+    border: none;
+    border-radius: 1.125rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.join-now-banner-content {
+    max-width: 443px;
+}
+
+.join-now-banner .description {
+    margin: 14px 0 32px;
+}
+
+.join-now-img {
+    width: 366px;
+    height: 312px;
+    background-image: url("../images/run.jpg");
+    background-repeat: no-repeat;
+    background-size: 330%;
+    background-position: 70% 30%;
+    border: none;
+    border-radius: 1.125rem;
+
+}
+
+/* join now banner mobile screen styles */
+@media screen and (max-width: 576px) {
+    .join-now-banner {
+        padding: 0 1rem;
+        margin: 66px auto 0;
+    }
+
+    .join-now-banner-parent {
+        flex-direction: column;
+        gap: 31px;
+    }
+
+    .join-now-banner-content .primary-btn{
+        min-width: 100%;
+    }
+
+    .join-now-img {
+        width: 100%;
+        height: 170px;
+        background-size: 150%;
     }
 }
