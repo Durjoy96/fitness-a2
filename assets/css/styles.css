@@ -29,6 +29,12 @@ body {
 }
 
 /* shared styles */
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--base-content);
+}
+
 .description {
     font-size: 1rem;
     font-weight: 400;
@@ -226,7 +232,7 @@ header {
     border-radius: 50%;
 }
 
-.tutorial-circle span{
+.tutorial-circle span {
     display: none;
 }
 
@@ -335,4 +341,58 @@ header {
         left: -2rem;
     }
 
+}
+
+/* change your habits default styles */
+.habits {
+    max-width: 68.25rem;
+    margin: 100px auto 0;
+}
+
+.habits-content {
+    max-width: 671px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habits-content .description {
+    margin: 14px 0 0;
+}
+
+.habits-card-container {
+    display: flex;
+    gap: 40px;
+    margin: 54px 0 0; 
+}
+
+.habit-card {
+    padding: .875rem;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.habit-card:hover {
+    background-color: rgba(48, 48, 48, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: .625rem;
+}
+
+.habit-card img {
+    width: 70%;
+    border: 2px solid var(--base-content-secondary);
+    border-radius: 50%;
+}
+
+.habit-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--base-content);
+    margin: 30px 0 0;
+}
+
+.habit-card .description {
+    font-size: .875rem;
+    margin: 6px 0 0;
 }
