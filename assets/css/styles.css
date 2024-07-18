@@ -347,6 +347,7 @@ header {
 .habits {
     max-width: 68.25rem;
     margin: 100px auto 0;
+    padding: 0 2rem;
 }
 
 .habits-content {
@@ -395,4 +396,34 @@ header {
 .habit-card .description {
     font-size: .875rem;
     margin: 6px 0 0;
+}
+
+/* change your habits mobile screen styles */
+@media screen and (max-width: 576px) {
+    .habits {
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .habits-content .description {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .habits-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habit-card {
+        max-width: 231px;
+    }
+
+    .habit-card img {
+        width: 90%;
+    }
 }
