@@ -362,6 +362,13 @@ header {
 
 }
 
+/* banner laptop screen styles */
+@media screen and (min-width: 992px) and (max-width: 1245px) {
+    .videos-card {
+        right: -1rem;
+    }
+}
+
 /* change your habits default styles */
 .habits {
     max-width: 68.25rem;
