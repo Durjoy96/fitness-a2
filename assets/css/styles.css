@@ -508,9 +508,11 @@ header {
 }
 
 /* bmi calculator default styles */
+
 .bmi-content {
     max-width: 671px;
     margin: 100px auto 100px;
+    padding: 0 2rem;
 }
 
 .bmi-calculator-background {
