@@ -446,6 +446,16 @@ header {
     }
 }
 
+/* change your habit section tablet screen styles */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .habits-card-container {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        justify-content: center;
+    }
+
+}
+
 /* run an extra miles default styles */
 .join-now-banner {
     max-width: 68.25rem;
