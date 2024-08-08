@@ -133,6 +133,7 @@ header {
     border-radius: 50px;
     font-weight: 600;
 }
+
 .navbar-page-link:hover .navbar-page-link.home {
     background-color: none;
 }
@@ -506,7 +507,7 @@ header {
         gap: 31px;
     }
 
-    .join-now-banner-content .primary-btn{
+    .join-now-banner-content .primary-btn {
         min-width: 100%;
     }
 
@@ -517,8 +518,84 @@ header {
     }
 }
 
-/* bmi calculator default styles */
+/* our team default styles */
+.meet-our-team {
+    max-width: 68.25rem;
+    margin: 88px auto 0;
+    padding: 0 2rem;
+}
 
+.meet-our-team-content {
+    width: 671px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-members {
+    margin: 58px 0 0;
+    padding: 20px;
+    background-color: var(--base-100);
+    border-radius: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    max-width: 326px;
+    height: 272px;
+    position: relative;
+    border: none;
+    border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-member.trainer-1 {
+    background-image: url(../images/trainer1.png);
+}
+
+.team-member.trainer-2 {
+    background-image: url(../images/trainer2.png);
+}
+
+.team-member.trainer-3 {
+    background-image: url(../images/trainer3.png);
+}
+
+.team-member.trainer-4 {
+    background-image: url(../images/trainer4.png);
+}
+
+.team-member.trainer-5 {
+    background-image: url(../images/trainer5.png);
+}
+
+.team-member.trainer-6 {
+    background-image: url(../images/trainer6.png);
+}
+
+.member-info {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+.member-name {
+    color: var(--base-content);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.member-position {
+    color: var(--base-content-secondary);
+    font-size: .875rem;
+    font-weight: 400;
+    margin: .25rem 0 0;
+}
+
+/* bmi calculator default styles */
 .bmi-content {
     max-width: 671px;
     margin: 100px auto 100px;
@@ -607,7 +684,7 @@ input[name="bmi"] {
 }
 
 input[name="bmi"]:focus {
-    outline: 1px solid var(--primary);   
+    outline: 1px solid var(--primary);
 }
 
 input[name="bmi"]::placeholder {
@@ -640,7 +717,7 @@ input[name="bmi"]::placeholder {
     top: 50%;
     transform: translate(-50%, -50%);
     color: var(--base-content);
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .bmi-calculator .primary-btn {
@@ -659,11 +736,11 @@ input[name="bmi"]::placeholder {
         padding: 3rem 1rem;
     }
 
-    .bmi-info, 
+    .bmi-info,
     .bmi-calculator {
-       width: 100%;
+        width: 100%;
     }
-    
+
     .bmi-cal-title {
         font-size: 1rem;
     }
@@ -684,9 +761,9 @@ input[name="bmi"]::placeholder {
         gap: 62px;
     }
 
-    .bmi-info, 
+    .bmi-info,
     .bmi-calculator {
-       width: 100%;
+        width: 100%;
     }
 }
 
@@ -722,14 +799,14 @@ input[name="bmi"]::placeholder {
     break-inside: avoid;
     background-color: rgba(48, 48, 48, 0.35);
     padding: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     cursor: pointer;
     transition: transform .2s;
 }
 
 .testimonial-card:hover {
-    transform:rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 mark {
@@ -805,7 +882,7 @@ mark {
 
 }
 
-/* footer default styles */ 
+/* footer default styles */
 footer {
     background-color: var(--base-100);
     padding: 66px 0 32px;
@@ -814,8 +891,9 @@ footer {
 .footer-parent {
     max-width: 68.25rem;
     margin: 0 auto;
-    padding: 0 2rem 80px; 
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);;
+    padding: 0 2rem 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    ;
 
     display: flex;
     align-items: flex-start;
@@ -863,12 +941,13 @@ footer {
 
 /* footer mobile screen styles */
 @media screen and (max-width: 576px) {
+
     .footer-parent,
     .get-started-columns {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     footer {
         padding: 44px 16px 57px;
     }
