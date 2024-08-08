@@ -935,7 +935,6 @@ footer {
     margin: 0 auto;
     padding: 0 2rem 80px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    ;
 
     display: flex;
     align-items: flex-start;
@@ -1001,5 +1000,12 @@ footer {
     .copy-right {
         margin: 41px 0 0;
         font-size: 1.25rem;
+    }
+}
+
+/* footer tablet screen styles */ 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .footer-parent {
+        flex-direction: column;
     }
 }
