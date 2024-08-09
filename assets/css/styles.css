@@ -261,6 +261,14 @@ header {
     color: var(--base-content);
 }
 
+.primary-btn .club-text {
+    display: block;
+}
+
+.primary-btn .no-club-text {
+    display: none;
+}
+
 /* banner mobile screen styles */
 @media screen and (max-width: 576px) {
     .banner {
@@ -290,6 +298,14 @@ header {
         max-width: 179px;
         height: auto;
         padding: 1rem;
+    }
+
+    .primary-btn .club-text {
+        display: none;
+    }
+
+    .primary-btn .no-club-text {
+        display: block;
     }
 
     .banner-img-container {
