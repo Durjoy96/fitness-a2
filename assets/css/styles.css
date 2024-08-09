@@ -921,6 +921,7 @@ input[name="bmi"]::placeholder {
 @media screen and (max-width: 576px) {
     .meet-our-team {
         margin: 66px 0 0;
+        padding: 0 1rem;
     }
 
     .team-members {
@@ -1082,12 +1083,18 @@ footer {
 .get-started-column {
     display: grid;
     gap: 1.25rem;
+    justify-items: start;
 }
 
 .get-started-column a {
     text-decoration: none;
     color: var(--base-content-secondary);
     font-size: 1.4375rem;
+    transition: color .1s ease-in-out .1s;
+}
+
+.get-started-column a:hover {
+    color: var(--primary);
 }
 
 .get-started-col-title {
