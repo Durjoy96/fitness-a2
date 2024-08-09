@@ -654,6 +654,10 @@ header {
         grid-template-columns: .8fr 1fr;
     }
 
+    .hide {
+        display: none;
+    }
+
 }
 
 /* bmi calculator default styles */
@@ -851,6 +855,13 @@ input[name="bmi"]::placeholder {
     gap: 20px;
 }
 
+.team-col-1,
+.team-col-2,
+.team-col-3 {
+    display: grid;
+    gap: 20px;
+}
+
 .team-member {
     height: 272px;
     position: relative;
@@ -916,25 +927,9 @@ input[name="bmi"]::placeholder {
         grid-template-columns: 1fr;
         margin: 37px 0 0;
     }
-
-    .hide {
+    
+    .team-col-1 {
         display: none;
-    }
-
-    .team-member.trainer-1 {
-        background-image: url(../images/trainer2.png);
-    }
-
-    .team-member.trainer-2 {
-        background-image: url(../images/trainer5.png);
-    }
-
-    .team-member.trainer-3 {
-        background-image: url(../images/trainer3.png);
-    }
-
-    .team-member.trainer-4 {
-        background-image: url(../images/trainer6.png);
     }
 }
 
