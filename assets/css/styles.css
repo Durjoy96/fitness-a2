@@ -525,6 +525,120 @@ header {
     }
 }
 
+/* training and exercise default styles */
+.training-and-exercise {
+    max-width: 68.25rem;
+    margin: 88px auto 0;
+    padding: 0 2rem;
+}
+
+.exercise-container {
+    width: 100%;
+    margin: 58px 0 0;
+}
+
+.exercise-container .first-column {
+    display: grid;
+    grid-template-columns: .4fr 1fr .5fr;
+}
+
+.exercise-container .second-column {
+    display: grid;
+    grid-template-columns: 1fr .7fr .7fr;
+}
+
+.exercise {
+    height: 200px;
+    background-size: cover;
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.exercise-1 {
+    background-image: url(../images/exercise1.jpg);
+    background-color:  rgba(6, 255, 210, 0.5);
+    background-blend-mode: overlay;
+}
+
+.exercise-2 {
+    background-image: url(../images/exercise2.png);
+    background-color: rgba(255, 0, 0, 0.3);
+    background-blend-mode: overlay;
+}
+
+.exercise-3 {
+    background-image: url(../images/exercise3.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.exercise-4 {
+    background-image: url(../images/exercise4.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.exercise-5 {
+    background-image: url(../images/exercise5.jpg);
+    background-color: rgba(66, 255, 0, 0.3);
+    background-blend-mode: overlay;
+}
+
+.exercise-6 {
+    background-image: url(../images/exercise6.jpg);
+    background-color: rgba(0, 71, 255, 0.3);
+    background-blend-mode: overlay;
+}
+
+.exercise-name {
+    position: absolute;
+    font-size: 1rem;
+    color: var(--base-content);
+    font-weight: 500;
+}
+
+.exercise-1 .exercise-name,
+.exercise-3 .exercise-name,
+.exercise-5 .exercise-name,
+.exercise-6 .exercise-name {
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.exercise-2 .exercise-name {
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.exercise-4 .exercise-name {
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+/* training and exercise mobile screen styles */
+@media screen and (max-width: 576px) {
+    .training-and-exercise {
+        padding: 0 1rem;
+    }
+
+    .exercise-container {
+        margin: 37px 0 0;
+    }
+
+    .exercise {
+        height: 160px;
+    }
+
+    .exercise-container .first-column {
+        grid-template-columns: 1fr .95fr;
+    }
+
+    .exercise-container .second-column {
+        grid-template-columns: .8fr 1fr;
+    }
+
+}
 
 /* bmi calculator default styles */
 .bmi-content {
@@ -659,21 +773,21 @@ input[name="bmi"]::placeholder {
         margin: 50px 0 32px;
         padding: 0 1rem;
     }
-    
+
     .bmi-calculator-parent {
         flex-direction: column;
         padding: 3rem 1rem;
     }
-    
+
     .bmi-info,
     .bmi-calculator {
         width: 100%;
     }
-    
+
     .bmi-cal-title {
         font-size: 1rem;
     }
-    
+
     .bmi-info .bmi-cal-title {
         margin: 0 0 1.5rem;
     }
@@ -684,12 +798,12 @@ input[name="bmi"]::placeholder {
     .bmi-content {
         margin: 100px 0 46px;
     }
-    
+
     .bmi-calculator-parent {
         flex-direction: column;
         gap: 62px;
     }
-    
+
     .bmi-info,
     .bmi-calculator {
         width: 100%;
@@ -729,7 +843,7 @@ input[name="bmi"]::placeholder {
 
     background-size: cover;
     background-position: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
 }
 
@@ -794,15 +908,15 @@ input[name="bmi"]::placeholder {
     .team-member.trainer-1 {
         background-image: url(../images/trainer2.png);
     }
-    
+
     .team-member.trainer-2 {
         background-image: url(../images/trainer5.png);
     }
-    
+
     .team-member.trainer-3 {
         background-image: url(../images/trainer3.png);
     }
-    
+
     .team-member.trainer-4 {
         background-image: url(../images/trainer6.png);
     }
@@ -1003,7 +1117,7 @@ footer {
     }
 }
 
-/* footer tablet screen styles */ 
+/* footer tablet screen styles */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .footer-parent {
         flex-direction: column;
